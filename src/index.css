@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONT FAMILY */
+@font-face {
+  font-family: 'AEONIK-REG';
+  src: url('./assets/Fonts/Aeonik-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'AEONIK-MED';
+  src: url('./assets/Fonts/Aeonik-Medium.ttf');
+}
+
+/* BACKGROUND */
+.background {
+  /* background-color: #131313; */
+  /* SPECIAL PROPERTY
+  bg-gradient-to-br from-black to-[#131313] */
+}
+
+#wrapper {
+  /* color: blueviolet; */
+  font-family: Aeonik Fono; /* Aeonik Fono */
+}
+
+a {
+  text-decoration: none;
+  color: #96acb7;
+}
+
+/* Active Navigation Link */
+/* .active {
+  @apply text-cyan-500;
+} */
+
+.active svg {
+  @apply text-cyan-500;
+}
+
+.bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.bar:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.bar:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.bar:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.smooth-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
